@@ -1,0 +1,54 @@
+body {
+  max-width: 80vw;
+  text-align: center;
+  font-size: 1rem;
+}
+header {
+  padding: 2rem;
+  border-bottom: 0.2rem solid;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+#posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2rem;
+}
+.post {
+  padding: 1.5rem;
+  border: 0.2rem solid;
+}
+aside {
+  width: 25vw;
+  padding: 1.5rem;
+  padding-right: 2vw;
+  font-size: 1em;
+}
+footer {
+  padding: 1.5rem;
+  border-top: 0.2rem;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+}
+section {
+  margin: 2vw;
+}
+
+/* 태블릿 */
+@media screen and (max-width: 1.23) {
+  body {
+    max-width: 90vw;
+  }
+  #posts {
+    display: grid;
+    grid-template-columns: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    flex-shrink: 5;
+  }
+}
