@@ -87,7 +87,7 @@ h3 {
   #posts {
     display: grid;
     /* grid-template-columns: 1fr 1fr;  아래와 같음 */
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /*3열 중 두개의 열만 2열로 배치하고 그 2열의 각각의 열 당 1fr만큼 비율 차지함*/
     gap: 1.5rem;
   }
   aside {
