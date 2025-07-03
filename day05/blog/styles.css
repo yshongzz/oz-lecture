@@ -12,8 +12,8 @@ body {
 
 header {
   padding: 1rem;
-  border-bottom: 0.1rem;
-  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid;
+  margin-bottom: 1rem;
 }
 
 .post {
@@ -24,13 +24,13 @@ header {
 
 aside {
   padding: 1rem;
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 footer {
   padding: 1rem;
   border-top: 0.1rem solid;
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 nav ul {
@@ -47,7 +47,7 @@ nav ul {
 }
 
 section {
-  margin: 0 2vw 0 1vw;
+  margin: 2vw 1vw;
 }
 
 aside {
@@ -76,16 +76,19 @@ h3 {
 @media screen and (min-width: 768px) {
   body {
     max-width: 90vw;
-    text-align: center;
+    /* text-align: center; */
+    margin: 0 auto;
   }
   nav ul {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-around;
   }
   #posts {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 1.5rem;
+    /* grid-template-columns: 1fr 1fr;  아래와 같음 */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
   aside {
     padding: 1.5rem;
@@ -93,18 +96,17 @@ h3 {
 }
 
 /* 데스크탑  */
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   body {
     max-width: 80vw;
-    text-align: center;
+    /* text-align: center; */
   }
   #posts {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    /* display: grid; */
+    grid-template-columns: repeat(3, 1fr);
   }
   aside {
     width: 25vw;
     margin-left: 2vw;
   }
-} */
+}
