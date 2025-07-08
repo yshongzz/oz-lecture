@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Day09</title>
+  </head>
+  <body>
+    <script>
+      // var, let, const 실습
+      var name = "oz";
+      var name = "oz2";
+
+      //변수
+      let age = 25;
+      age = 30;
+
+      //상수
+      const pi = 3.14;
+      // pi = 3.2;// 재할당 안됨
+
+      const profile = { name: "yujun" }; // {}는 객체 Object
+      //   profile = 23; // 재할당 안됨
+      // profile = {name: "taem"} // 객체 자체는 재할당안됨
+      profile.name = "taem"; //객체 내의 내용은 바꿀 수 있음
+
+      // string 문자열
+      let string1 = "작은따옴표(')가 포함됩니다.";
+      let string2 = '큰따옴표(")가 포함됩니다.';
+      //console.log("string1", string1);
+      //console.log("string2", string2); //출력
+
+      // string 문자열 연결
+      let stringA = "문자열" + " 연결";
+      let stringB = string1 + " " + string2;
+      console.log("stringA", stringA);
+      console.log("stringB", stringB);
+
+      //(백틱)  :숫자 1 왼쪽에 있는 것 (`)
+      let myName = "taem";
+      let oldString = "나의 이름은" + myName + "입니다.";
+      let es6String = `나의 이름은 ${myName}입니다.`;
+      console.log(oldString);
+      console.log(es6String);
+
+      // 숫자형
+      // 숫자 - 정수
+      let num1 = 1;
+      let num2 = 2;
+      console.log("num1 + num2:", num1 + num2);
+
+      // 숫자 - 실수
+      let float1 = 0.1;
+      let float2 = 1.1;
+      console.log("float1 + float2:", float1 + float2);
+
+      // 논리형
+      let boolean1 = true;
+      let boolean2 = false;
+      let boolean3 = 10 < 20;
+      let boolean4 = 10 > 20;
+      console.log("boolean1", boolean1);
+      console.log("boolean2", boolean2);
+      console.log("boolean3", boolean3);
+      console.log("boolean4", boolean4);
+
+      // 객체
+      // 배열
+      let studentScore = [80, 70, 90, 60, 20];
+      let emptyScore = []; // 빈 배열
+      console.log(studentScore);
+      console.log("studentScore[0]", studentScore[0]);
+      console.log("studentScore[1]", studentScore[1]);
+      console.log("studentScore[2]", studentScore[2]);
+      console.log("studentScore[3]", studentScore[3]);
+      console.log("studentScore.length", studentScore.length);
+      console.log("emptyScore.length", emptyScore.length);
+    </script>
+  </body>
+</html>
