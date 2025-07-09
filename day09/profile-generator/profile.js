@@ -68,7 +68,7 @@ console.log(x > 4 || x == 10);
 //null, undefined, NaN
 let a = null; //null
 let b; //undefined
-console.log(typeof a); //object
+console.log(typeof a); //object  (객체임)
 console.log(typeof b); //undefined
 
 let c = +"100";
