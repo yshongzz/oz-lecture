@@ -20,7 +20,7 @@ if (input >= 60) {
   score = "Pass";
   if (input >= 100) {
     grade = "S";
-    message = "Super!!";
+    message = "Super!!"; //2개 이상의 일을 처리하는 경우 { }블록으로 처리 꼭해줘야함
   } else if (input >= 90 && input < 100) {
     grade = "A";
     message = "Excellent work!";
@@ -76,7 +76,6 @@ console.log(`Final Score: ${input1}`);
 //등급 결정 (if문)
 if (input1 >= 100) {
   grade1 = "S";
-  message1 = "Super!!";
 } else if (input1 >= 90 && input1 < 100) {
   grade1 = "A";
 } else if (input1 >= 80 && input1 < 90) {
