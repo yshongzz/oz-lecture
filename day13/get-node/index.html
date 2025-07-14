@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Day13 get-node</title>
+  </head>
+  <body>
+    <h1 id="title">title</h1>
+    <p class="text">text-1</p>
+    <p class="text">text-2</p>
+    <input type="email" name="email" />
+  </body>
+  <script>
+    //el =element
+
+    const el = document.getElementById("title"); //반환값 : 객체 1개
+    console.log(el);
+    console.log(typeof el); // 객체임 =>DOM 임
+
+    const classEls = document.getElementsByClassName("text"); //반환값 : 여러개의 객체가 담긴 배열 1개
+    console.log(classEls); // 배열로 결과가 나오지만, 객체임
+    console.log(classEls[0]); // 배열로 결과가 나오지만, 객체임
+    console.log(classEls[1]); // 배열로 결과가 나오지만, 객체임
+    console.log(typeof classEls);
+
+    const nameEls = document.getElementsByName("email");
+    console.log(nameEls);
+
+    const tagEls = document.getElementsByTagName("p");
+    console.log(tagEls);
+  </script>
+</html>
