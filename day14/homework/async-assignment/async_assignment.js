@@ -6,6 +6,7 @@ const timerButton = document.getElementById("startTimer");
 const MAX_TIME = 10;
 let timerCount;
 let timerMessage;
+
 //시작버튼
 timerButton.addEventListener("click", function () {
   const input = timerInput.value;

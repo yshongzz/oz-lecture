@@ -1,44 +1,54 @@
-//후치연산
+// 후치연산
 let increment = 10;
-console.log("1", increment);
-
+console.log("1", increment); // 10
 increment++;
-console.log("2", increment);
-console.log("3", increment++); //11 :inc을 증가 시키고 콘솔 찍음
-console.log("4", increment);
+console.log("2", increment); // 11
+console.log("3", increment++); // 11
+console.log("4", increment); // 12
 
 let decrement = 10;
-console.log("dec1", decrement);
+console.log("dec1", decrement); // 10
 decrement--;
-console.log("dec2", decrement);
-console.log("dec3", decrement--);
-console.log("dec4", decrement);
+console.log("dec2", decrement); // 9
+console.log("dec3", decrement--); // 9
+console.log("dec4", decrement); // 8
 
-//전치연산
-let incFirest = 10;
-console.log("incFirest1", incFirest);
-++incFirest;
-console.log("incFirest2", incFirest);
-console.log("incFirest3", ++incFirest); //결과:12 =>incFirest을 콘솔에 올리기 전에 1 증가 하고 콘솔 찍음
-console.log("incFirest4", incFirest);
+// 전치연산
+let incFirst = 10;
+console.log("incFirst 1", incFirst); // 10
+++incFirst;
+console.log("incFirst 2", incFirst); // 11
+console.log("incFirst 3", ++incFirst); // 12 //결과:12 =>incFirest을 콘솔에 올리기 전에 1 증가 하고 콘솔 찍음
+console.log("incFirst 4", incFirst); // 12
 
-let decFirest = 10;
-console.log("decFirest1", decFirest);
-++decFirest;
-console.log("decFirest2", decFirest);
-console.log("decFirest3", ++decFirest);
-console.log("decFirest4", decFirest);
+let decFirst = 10;
+console.log("decFirst 1", decFirst); // 10
+--decFirst;
+console.log("decFirst 2", decFirst); // 9
+console.log("decFirst 3", --decFirst); // 8
+console.log("decFirst 4", decFirst); // 8
 
-//let c = c++; //불가능
+// console.log(++a) 전치연산
+let a = 10;
+a = a + 1;
+console.log(a);
 
-//단항 부정 연산자
+// console.log(b++) 후치연산
+let b = 10;
+console.log(b);
+b = b + 1;
+
+// 불가
+// let c = c++;
+
+// 단항 부정 연산자
 let num = -10;
 num = -num;
-console.log(num);
+console.log("-(-10)", num);
 
 let num2 = 10;
 num2 = -num2;
-console.log(num2);
+console.log("-(10)", num2);
 
 let num3 = 10;
 -num3; //결과: 10 =>num3에 값을 할당하지 않았기 때문에 -을 붙여도 값은 변하지 않음
